@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style_Laundry_req.css">
+    <title>Laundry Request</title>
+</head>
+<body>
+    <div id="head">
+        <p><span style="color:#33b5e5;">Dashbord</span>/Overview</p>
+    </div>
+    <div class="container">
+        <form action="GatherLaundryData.php" method="GET">
+            <input type="date" name="date">&nbsp;
+            <input type="text"  name="top_wear_type" placeholder="Topwear(Tshirt,Top,Shirt)">
+            <br>
+            <input type="text" name="bottom_wear_type" style="width:1063px;" placeholder="Bottomwear(Lower,Jeans,Leggins)">
+            <br>
+            <input type="text" name="cloth_type" style="width:1063px;" placeholder="Woolen Cloth">
+            <br>
+            <input type="text" name="other" style="width:1063px;" placeholder="Other">
+            <br>
+            <select name="service_type" style="width:1063px;" id="Laundry_Ser">
+                <option value="Select services Type">Select services Type</option>
+                <option value="Dry cleaning services">Dry cleaning services </option>
+                <option value="Fluff and fold laundry services">Fluff and fold laundry services</option>
+                <option value="Commercial laundry services">Commercial laundry services</option>
+                <option value="Pickup laundry services">Pickup laundry services</option>
+            </select>
+            <br>
+            <input type="text" name="contact_person"  style="width:1063px;" placeholder="Contact Person">
+            <br>
+            <input type="text" name="description"  style="width:1063px;" placeholder="Description(if any)">
+            <input type="submit" Value="Submit" class="Sub">
+        </form>
+    </div>
+</body>
+</html>

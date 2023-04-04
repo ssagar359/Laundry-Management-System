@@ -1,0 +1,41 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    width:100vw;
+    height:100vh;
+    background-color: rgb(168, 186, 219);
+}
+#head{
+    /* border:2px solid red; */
+    height: 36px;
+    font-size: 18px;
+    background-color: #eee;
+    margin:14px 10px 6px 10px;
+    border-radius: 10px;
+    padding:5px;
+}
+.container input{
+    width : 1063px;
+    height: 38px;
+    margin:10px 10px 5px 10px;
+    /* padding: 10px; */
+    border-radius: 10px;
+}
+select{
+    width : 1063px  !important;
+    height: 38px;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+}
+.Sub{
+    background-color: aqua;
+    border: none;
+    font-size: 20px;
+}   
+.Sub:hover{
+    background-color: aquamarine;
+}
