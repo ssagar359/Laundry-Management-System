@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Update</title>
+    <style>
+        *{
+            padding: 0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width:50vw;
+            height: 50vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #activity{
+            width:300px;
+            height:290px;
+            background-color: rgb(142, 174, 234);
+            margin-top: 40px;
+        }
+        select{
+            width:297px;
+            height: 30px;
+            text-align: center;
+            margin-top: 30px;
+            /* border: none; */
+        }
+        p{
+            text-align: center;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="activity">
+            <p>What Is Process Going On?</p>
+            <select name="progress" id="nothing">
+                <option value="New Request">New Request</option>
+                <option value="Accept">Accept</option>
+                <option value="inprocess">inprocess</option>
+                <option value="Finished">Finished</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>

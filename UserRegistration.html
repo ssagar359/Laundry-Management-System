@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style_Reg_Form.css">
+    <title>Registration Form</title>
+    <script>
+        function validation(inputtxt) {
+            var name = document.myForm.name.value;
+            var email = document.myForm.email.value;
+            var phoneno = document.myForm.mobileno.value;
+            var password = document.myForm.password.value;
+            var security_answer = document.myForm.security_answer.value;
+
+            if (name == "" || name == " ") {
+                alert("Name must be filled out")
+                return false;
+            }
+            if (email == "" || !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
+                alert("You have entered an invalid email address!")
+                return false
+            }
+            if (!phoneno.match(/^\d{10}$/)) {
+                alert("Enter Integer Value and input<=10");
+                return false
+            }
+            if (password == "") {
+                alert("Please enter your password");
+                return false;
+            }
+            if (password.length < 8) {
+                alert("Password should be atleast 6 character long");
+                return false;
+
+            }
+            if (!password.match(/^[A-Za-z_]\w{7,15}$/)) {
+                alert("Enter valid password(must start with a letter and between 8-16 characters)");
+                return false
+            }
+            if(security_answer == "")
+            {
+                alert("Security answer should not be blank")
+                return false
+            }
+            return true
+        }
+    </script>
+</head>
+
+<body>
+    <p class="para">LMS || User Registration</p>
+    <div class="container">
+        <form action="GatherUserRegistrationData.php" onsubmit="return validation()" name="myForm" method="POST">
+            <div class="input_sec">
+                <input type="text" placeholder="Full Name" name="name" required>
+                <input tupe="email" placeholder="Email" name="email" required>
+                <input type="text" placeholder="Mobile Number" name="mobileno" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <select name="security_question" id="security_question" class = "security_question" style="width:95%;height:30px;margin:10px;">
+                    <option value="Your pet name">Your pet name</option>
+                    <option value="Your favourite book name">Your favourite book name</option>
+                    <option value="Your Favourite place">Your Favourite place</option>
+                </select>
+                <input type="text" placeholder="Security Answer" name="security_answer" required>
+            </div>
+            <div id="btn">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.head-1{
+    background-color:rgba(211, 211, 211, 0.753);
+    width:420px;
+    text-align: center;
+    color:white;
+    border-radius: 10px;
+}
+.div-1{
+    border:3px solid blue;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container{
+    background-color: rgb(135, 167, 228);
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#recoverpassword{
+    width:430px;
+    height: 240px !important;
+    padding:10px;
+}
+input{
+    /* margin:5px 10px 20px 0px; */
+    margin: 10px;
+}
+.E1{
+    width:300px;
+    height:40px;
+    border-radius: 10px;
+}
+.E2{
+    width:300px;
+    height:40px;
+    border-radius: 10px;
+}
